@@ -1,0 +1,22 @@
+﻿<Window x:Class="BlackOpsMasmCipherSolver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlackOpsMasmCipherSolver"
+        mc:Ignorable="d"
+        Title="Black Ops MASM decipher Tool" Height="500" Width="800" MinWidth="800" MinHeight="500">
+    <Grid>
+        <TextBox x:Name="cipherText" HorizontalAlignment="Stretch" Height="80" Margin="20,40,20,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" ToolTip="Enter values separated by spaces. Don't include db or dd"/>
+        <Label Content="Cipher :" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.31,0.615"/>
+        <TextBox x:Name="clenText" HorizontalAlignment="Stretch" Height="80" Margin="20,150,20,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" ToolTip="Enter values separated by spaces. Don't include db or dd"/>
+        <Label Content="Clen :" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.31,0.615"/>
+        <Label Content="Output :" HorizontalAlignment="Left" Margin="20,230,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.31,0.615"/>
+        <TextBox x:Name="OutputText" HorizontalAlignment="Stretch" Height="150" Margin="20,260,20,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Button Content="Decipher" HorizontalAlignment="Left" Margin="20,0,0,10" VerticalAlignment="Bottom" Width="75" Click="Button_Decipher"/>
+        <TextBox x:Name="ccountText" HorizontalAlignment="Right" Height="23" Margin="0,0,0,10" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom" Width="120"/>
+        <Label Content="ccount :" HorizontalAlignment="Right" Margin="0,0,120,10" VerticalAlignment="Bottom"/>
+        <Button Content="Clear All" HorizontalAlignment="Left" Margin="117,0,0,10" VerticalAlignment="Bottom" Width="75" Click="Button_Clear"/>
+
+    </Grid>
+</Window>
